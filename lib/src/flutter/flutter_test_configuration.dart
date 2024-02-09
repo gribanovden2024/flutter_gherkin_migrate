@@ -182,7 +182,7 @@ class FlutterTestConfiguration extends TestConfiguration {
   }
 
   @override
-  void prepare() {
+  TestConfiguration? prepare() {
     _ensureCorrectConfiguration();
     final providedCreateWorld = createWorld;
     createWorld = (config) async {
@@ -227,6 +227,7 @@ class FlutterTestConfiguration extends TestConfiguration {
         WaitUntilKeyExistsStep(),
         WaitUntilTypeExistsStep(),
       ]);
+    return null;
   }
 
   Future<FlutterDriver> _attemptDriverConnection(

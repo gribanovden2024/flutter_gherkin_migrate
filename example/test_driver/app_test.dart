@@ -35,8 +35,8 @@ Future<void> main() {
   // ..logFlutterProcessOutput = true // uncomment to see command invoked to start the flutter test app
   // ..verboseFlutterProcessLogs = true // uncomment to see the verbose output from the Flutter process
   // ..flutterBuildTimeout = Duration(minutes: 3) // uncomment to change the default period that flutter is expected to build and start the app within
-  // ..runningAppProtocolEndpointUri =
-  //     'http://127.0.0.1:51540/bkegoer6eH8=/' // already running app observatory / service protocol uri (with enableFlutterDriverExtension method invoked) to test against if you use this set `restartAppBetweenScenarios` to false
+  // ..runningAppPlEndpointUri =
+  //     'http://127.0.0.1:51540/bkegoer6eH8=/' // already running app observatory / seprotocol uri (with enableFlutterDriverExtension method invoked) to test against if you use this set `restartAppBetweenScenarios` to false
 
   return GherkinRunner().execute(config);
 }
